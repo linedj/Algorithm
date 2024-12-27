@@ -6,7 +6,6 @@ class Solution {
         HashMap<String, Integer> matches = new HashMap<>();
         
         for(int i = 0; i < len; i++) {
-            String item = clothes[i][0];    //의상 이름
             String kind = clothes[i][1];    //의상 종류
             //KEY = 의상 종류, VALUE = 같은 종류를 같은 옷의 개수
             matches.put(kind, matches.getOrDefault(kind, 0) + 1); 
