@@ -2,6 +2,7 @@ import java.util.Stack;
 class Solution {
 	public int[] solution(int[] prices) {
         //이중 포문으로도 풀리는 문제
+        //스택으로 그림그려서 이해함
         
 		int[] answer = new int[prices.length];
 		Stack<Integer> stack = new Stack<>();
