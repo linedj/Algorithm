@@ -10,6 +10,7 @@ class Solution {
                              .sorted((a, b) -> (b + a).compareTo(a + b))
                              .toArray(String[]::new);
         
+        //모든 수가 0인경우
         if (str[0].equals("0")) {
             return "0";
         }
