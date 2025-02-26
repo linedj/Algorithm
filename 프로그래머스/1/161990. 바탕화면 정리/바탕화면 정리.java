@@ -5,22 +5,20 @@ class Solution {
         int rdx = 0;
         int rdy = 0;
 
-        for(int i=0; i<wallpaper.length;i++){
-            for(int j=0; j<wallpaper[0].length();j++){
-                int nowX = j;
-                int nowY = i;
-                if(wallpaper[i].charAt(j)=='#'){
-                    if(lux>nowX){
-                        lux=nowX;
+        for(int y=0; y<wallpaper.length;y++){
+            for(int x=0; x<wallpaper[0].length();x++){
+                if(wallpaper[y].charAt(x)=='#'){
+                    if(lux>x){
+                        lux=x;
                     }
-                    if(luy>nowY){
-                        luy=nowY;
+                    if(luy>y){
+                        luy=y;
                     }
-                    if(rdx<nowX){
-                        rdx=nowX;
+                    if(rdx<x){
+                        rdx=x;
                     }
-                    if(rdy<nowY){
-                        rdy=nowY;
+                    if(rdy<y){
+                        rdy=y;
                     }
                 }
             }
